@@ -1,0 +1,185 @@
+/* Ross Oswald's CSS File */
+/* File validated on Jigsaw W3 - yay!!!! */
+/* This license can also be found at this permalink: https://www.fontsquirrel.com/license/Underwood-Champion */
+@font-face{font-family: 'underwood_champion-webfont';
+
+src: url(underwood_champion-webfont.woff);
+
+font-weight: normal;
+font-style: normal;}
+
+/* base for a code with background image, no sense messing with a good thing */
+body { font-family:'underwood_champion-webfont', verdana, arial, sans-serif;
+	font-size: 16px;
+	color: #301D14;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	background: white url(images/unsplashbg.jpg); } 
+
+h1, h2, h3, h4 { font-family:'underwood_champion-webfont', garamond, arial, sans-serif;
+		font-weight: normal; }
+
+h1 { font-size: 170%; }
+h2 { font-size: 150%; }
+h3 { font-size: 130%; }
+h4 { font-size: 130%; }
+
+
+p, h1, h2, h3, h4, ol, ul {margin-top: 1px;
+			margin-bottom: 1px; }
+			
+			
+
+ol { padding-left: 0;
+	margin-left: 20px; }
+
+img { display: inline-block;
+	padding: 1px;
+	border: 2px dashed gray;
+	background-color: white; } /* < Hard to beat that stamp-border look. I really like it */
+
+a {color: #B38542;
+	font-weight: bold;
+	text-decoration: underline;
+	border-bottom: 1px groove #6BCF30;
+	padding-bottom: 1px; }
+	
+strong {color: #800000; } /* It's a little sloppy to make these colour-coded for one part of the site... */
+
+em {color: #00008B; } /* ... but I'm already facing down the time pressure and this is the fastest solution I can think of. Sometimes 'done' is better than 'amazing'.*/
+
+
+a:visited {color: #8C5115; }
+
+a:hover, a:focus, a:active { background-color: #ffffff;
+				color: #58AC3B;
+				border-bottom-color: #B7B448; }
+
+/* change width as needed */
+div#wrapper { width: 950px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: #969F76;
+		background-repeat: repeat-y;
+		background-position: left top;
+		background-attachment: scroll;
+		border: 2px solid black; } 
+
+.quarantine { width: 750px;
+				margin-left: auto;
+				margin-right: auto;
+				padding-left: 10px ;
+				padding-bottom: 5px ; 
+				margin-bottom: 50px ;
+				border: 1px solid black ;
+				background-color: white ;} /* Making these classes instead of IDs as they are repeated per W3C giving me errors about it */
+
+.leftside { float: left ;
+				display: inline;
+				padding-right: 20px ;
+				padding-left: 20px ;				
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 5px;
+				margin-bottom: 5px; } /* so I could accomplish putting the images/icons in-line with text on opposite sides */
+
+.rightside { float: right ;
+				display: inline; 
+				padding-right: 20px ;
+				padding-left: 20px ;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 5px;
+				margin-bottom: 5px; } /* ditto above */
+				
+.enlightenedcentrist { clear: both ;
+				display: block; 
+				padding-right: 20px ;
+				padding-left: 20px ;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 5px;
+				margin-bottom: 5px; } /* The name for this one is an inside joke */
+
+/* change width / height to fit image */
+header {height: 100px;
+	margin-bottom: 20px;
+	width: 950px; }
+
+header, h1, header p { text-indent: -999999999px; }
+
+h2 { text-align: center ;}
+
+h4 { text-indent: 450px; }
+
+body.home header { background: white url(images/indexbanner.png) no-repeat; }
+
+body.joseph header { background: white url(images/josephbanner.png) no-repeat; }
+
+body.sewers header { background: white url(images/sewerbanner.png) no-repeat; }
+
+body.epi header { background: white url(images/epibanner.png) no-repeat; }
+
+body.attrib header { background: white url(images/creditbanner.png) no-repeat; }
+
+article { float: left;
+	width: 900px;
+	padding-left: 10px; }
+
+nav { float: left;
+  bottom: 0;
+  width: 100%;
+	padding-right: 5px; } /* I was trying to get a nav bar that would 'stick' at the bottom below everything and couldn't get it to stop covering the footer. see nav a for more */
+
+footer { clear: both;
+	padding: 10px;
+	font-size: 75%;
+	height: 1%;
+	background-color: #35490F;
+	color: #ffffff;
+	border-top: 2px dotted #464646; }
+
+footer p { margin-bottom: 0; }
+
+footer a:link { color: yellow; }
+
+footer a:hover, footer a:focus, footer a:active {background-color: transparent;
+						border: none; }
+
+nav ul { list-style-type: none;
+	border: 1px solid #C0DDAA;
+	padding-left: 5px;
+	border-bottom: none;
+	display: block;
+	line-height: 2;
+	height: 1%; } /* lordy lord */
+
+nav a {
+	background: #352718;
+	padding-left: 3px;
+	padding-right: 3px;
+	line-height: 2;
+	text-align: center;
+	border-bottom-color: #C0DDAA;
+	height: 1%; } /* It's all in a line at the bottom. Not the clean navigation bar I would have liked to make but I didn't want to burn myself out trying to make it work*/
+
+nav a:hover { background-color: white; }
+
+nav li { display: inline; }
+
+table, th, td { border: 1px solid black; } /* Separates the cells into more discrete boxes */
+
+tr:nth-child(even) {
+  background-color: #E0EED6; } /* Creates a bit of visual interest in the tables */
+
+caption { display: none; }
+
+thead { color: white;
+	background-color: #cccccc;
+	text-align: left; }
+
+tbody { font-family: Georgia, serif;
+	font-size: 90%; }
